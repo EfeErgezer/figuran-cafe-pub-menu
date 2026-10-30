@@ -245,10 +245,10 @@ const UI = {
   visit:["Bizi Ziyaret Et","Visit Us"],
   hours:["Açılış Saatleri","Opening Hours"],
   loc:["Konum","Location"],
-  locTxt:["Adres bilgisi işletme tarafından eklenecektir.","Address to be added by the venue."],
+  locTxt:["Mithatpaşa Mh. Ortakapı Cd. 6/D","Mithatpaşa Mh. Ortakapı Cd. 6/D"],
   map:["Haritada Aç","Open in Maps"],
   follow:["Bizi Takip Et","Follow Us"],
-  followTxt:["Canlı müzik geceleri, maç yayınları ve yeni lezzetler için Instagram'da bizi takip et.","Follow us on Instagram for live music nights, match screenings and new dishes."],
+  followTxt:["Instagram: @figurancafe","Instagram: @figurancafe"],
   homeBtn:["Ana Sayfa","Home"],
   catNav:["Kategoriler","Categories"],
   from:["başlayan","from"],
@@ -468,7 +468,7 @@ const itemRow = it => `<button class="item" data-id="${it.id}" aria-haspopup="di
 
 /* ---------- Saatler ---------- */
 const DAYS = [["Pazartesi","Monday"],["Salı","Tuesday"],["Çarşamba","Wednesday"],["Perşembe","Thursday"],["Cuma","Friday"],["Cumartesi","Saturday"],["Pazar","Sunday"]];
-const HOURS = [["10:00","00:00"],["10:00","00:00"],["10:00","00:00"],["10:00","01:00"],["10:00","02:00"],["09:00","02:00"],["09:00","00:00"]];
+const HOURS = [["14:00","03:00"],["14:00","03:00"],["14:00","03:00"],["14:00","03:00"],["14:00","03:00"],["14:00","03:00"],["14:00","03:00"]];
 function openState(){
   const d=new Date(), idx=(d.getDay()+6)%7, m=d.getHours()*60+d.getMinutes();
   const toM=t=>{const[a,b]=t.split(":").map(Number);return a*60+b};
@@ -516,10 +516,10 @@ function viewHome(){
         <ul class="hours">${HOURS.map((h,i)=>`<li class="${i===st.idx?"today":""}"><span>${L(DAYS[i])}</span><span>${h[0]} – ${h[1]}</span></li>`).join("")}</ul></div>
       <div class="card"><h3>${icon("i-pin")}${L(UI.loc)}</h3>
         <p>Figüran Cafe &amp; Pub<br>${L(UI.locTxt)}</p>
-        <a class="ghost" href="https://www.google.com/maps/search/?api=1&query=Fig%C3%BCran%20Cafe%20Pub" target="_blank" rel="noopener">${L(UI.map)} ${icon("i-arrow")}</a></div>
+        <a class="ghost" href="https://www.google.com/maps/search/?api=1&query=Mithatpa%C5%9Fa%20Mh.%20Ortakap%C4%B1%20Cd.%206%2FD" target="_blank" rel="noopener">${L(UI.map)} ${icon("i-arrow")}</a></div>
       <div class="card"><h3>${icon("i-ig")}${L(UI.follow)}</h3>
         <p>${L(UI.followTxt)}</p>
-        <a class="ghost" href="https://www.instagram.com/" target="_blank" rel="noopener">Instagram ${icon("i-arrow")}</a></div>
+        <a class="ghost" href="https://www.instagram.com/figurancafe" target="_blank" rel="noopener">@figurancafe ${icon("i-arrow")}</a></div>
     </div>
   </section></div>`;
 }
