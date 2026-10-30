@@ -253,14 +253,12 @@ const UI = {
   catNav:["Kategoriler","Categories"],
   from:["başlayan","from"],
   ing:["İçindekiler","Ingredients"],
-  alg:["Alerjenler","Allergens"],
-  noAlg:["Bilinen ana alerjen içermez; çapraz bulaşma olabilir.","No major known allergens; cross-contact is possible."],
   sizePick:["Seçenek","Option"],
   orderNote:["Siparişinizi masanızdaki ekibimize iletebilirsiniz.","Please place your order with our team at your table."],
   close:["Kapat","Close"],
   openNow:["Şu an açık","Open now"], closedNow:["Şu an kapalı","Closed now"],
   until:t=>[`${t}'e kadar`,`until ${t}`], opens:t=>[`${t}'da açılıyor`,`opens at ${t}`],
-  foot1:["Fiyatlar demo amaçlıdır ve KDV dahil gösterilmiştir. Alerjen bilgisi için lütfen ekibimize danışın.","Prices are for demo purposes and include VAT. Please ask our team about allergens."],
+  foot1:["Fiyatlar demo amaçlıdır ve KDV dahil gösterilmiştir.","Prices are for demo purposes and include VAT."],
   foot2:["Alkollü içecekler 18 yaş altına satılmaz.","Alcohol is not served to anyone under 18."],
   tap:["Musluktan","On Tap"], bottle:["Şişede","Bottled"],
   title:["Menü","Menu"]
@@ -275,7 +273,7 @@ const szLabel = k => SZ[k] ? L(SZ[k]) : k;
 
 /* =========================================================
    MENÜ VERİSİ — n: ad, d: açıklama, i: içindekiler, s: [boyut, fiyat]
-   f: öne çıkan (ana sayfada), fl: ["spicy","veg"], al: alerjenler
+  f: öne çıkan (ana sayfada), fl: ["spicy","veg"]
    ========================================================= */
 const CATS = [
  {id:"saraplar",icon:"i-glass",name:["Şaraplar","Wines"],intro:["Dengeli ve zarif şarap seçenekleri.","Balanced and elegant wine selections."],items:[
@@ -552,7 +550,6 @@ function renderSheet(){
     <p class="desc">${esc(L(it.d))}</p>
     <dl class="meta">
       ${it.i?`<div><dt>${L(UI.ing)}</dt><dd>${esc(L(it.i))}</dd></div>`:""}
-      <div><dt>${L(UI.alg)}</dt><dd>${it.al.length?esc(it.al.map(a=>L(AL[a])).join(", ")):L(UI.noAlg)}</dd></div>
     </dl>
     ${it.s.length>1?`<div class="sizes-pick" role="group" aria-label="${L(UI.sizePick)}">${it.s.map((x,i)=>`<button type="button" data-s="${i}" aria-pressed="${i===sel}">${esc(szLabel(x[0]))}</button>`).join("")}</div>`:""}
     <div class="bottom"><div><span class="note">${esc(szLabel(it.s[sel][0]))}</span><div class="price">${tl(it.s[sel][1])}</div></div>
