@@ -288,25 +288,29 @@ const CATS = [
   {n:["Mojito","Mojito"],d:["Nane, misket limon, şeker şurubu, white rom, soda","Mint, lime, sugar syrup, white rum, sparkling water"],s:[["tek",400]]},
   {n:["Sex on the Beach","Sex on the Beach"],d:["Vodka, şeftali likörü, portakal suyu, nar şurubu","Vodka, peach liqueur, orange juice, pomegranate syrup"],s:[["tek",350]]},
   {n:["Cosmopolitan","Cosmopolitan"],d:["Vodka, portakal likörü, misket limon suyu, kızılcık suyu","Vodka, orange liqueur, lime juice, cranberry juice"],s:[["tek",300]]},
-  {n:["Camsil","Camsil"],d:["Vodka, blue curacao, limon suyu, sprite (soda)","Vodka, blue curacao, lemon juice, sprite"],s:[["tek",280]]},
   {n:["Negroni","Negroni"],d:["Cin, campari, vermut","Gin, campari, vermouth"],s:[["tek",500]]},
   {n:["Cuba Libre","Cuba Libre"],d:["Kola, limon suyu, white rom","Cola, lemon juice, white rum"],s:[["tek",400]]},
   {n:["Gin Fizz","Gin Fizz"],d:["Cin, limon suyu, pudra şekeri","Gin, lemon juice, powdered sugar"],s:[["tek",400]]},
   {n:["Gin Tonic","Gin Tonic"],d:["Cin, limon suyu, tonic","Gin, lemon juice, tonic"],s:[["tek",400]]},
   {n:["Old Fashioned","Old Fashioned"],d:["Şeker, bitter, viski, viski likörü","Sugar, bitters, whiskey, whiskey liqueur"],s:[["tek",500]]},
   {n:["Tekila Sunrise","Tequila Sunrise"],d:["Tekila, portakal suyu, nar şurubu","Tequila, orange juice, pomegranate syrup"],s:[["tek",450]]},
-  {n:["Whiskey Sour","Whiskey Sour"],d:["Viski, limon suyu, şeker şurubu, yumurta akı","Whiskey, lemon juice, sugar syrup, egg white"],s:[["tek",450]]},
+  {n:["Whiskey Sour","Whiskey Sour"],d:["Viski, limon suyu, şeker şurubu","Whiskey, lemon juice, sugar syrup"],s:[["tek",450]]},
   {n:["Aperol Spritz","Aperol Spritz"],d:["Aperol, beyaz şarap, soda","Aperol, white wine, sparkling water"],s:[["tek",500]]},
   {n:["Margarita","Margarita"],d:["Tekila, portakal likörü, şeker şurubu, lime suyu","Tequila, orange liqueur, sugar syrup, lime juice"],s:[["tek",450]]},
   {n:["Espresso Martini","Espresso Martini"],d:["Vodka, kahlua, espresso, şeker şurubu","Vodka, kahlua, espresso, sugar syrup"],s:[["tek",450]]}
  ]},
- {id:"figuran-imza-kokteyller",icon:"i-bottle",name:["Figüran İmza Kokteyller","Figüran Signature Cocktails"],intro:["Mekanımıza özel karışımlar.","House-made signature combinations."],items:[
+ {id:"figuran-imza-kokteyller",icon:"i-bottle",name:["İmza Kokteyller","Signature Cocktails"],intro:["Mekanımıza özel karışımlar.","House-made signature combinations."],items:[
   {n:["Lovebombing","Lovebombing"],d:["Vodka, aperol, lime suyu, orman meyve püresi","Vodka, aperol, lime juice, forest fruit puree"],s:[["tek",400]]},
   {n:["Sugar Dady","Sugar Dady"],d:["Cin, vişne suyu, limon suyu, meyve püresi","Gin, sour cherry juice, lemon juice, fruit puree"],s:[["tek",400]]},
-  {n:["Kuzukulağı","Sorrel"],d:["Cin, lime suyu, yumurta akı, şeker şurubu, kuzukulağı","Gin, lime juice, egg white, sugar syrup, sorrel"],s:[["tek",450]]}
+  {n:["Camsıl","Camsil"],d:["Vodka, blue curaçao, limon suyu, Sprite (soda)","Vodka, blue curaçao, lemon juice, Sprite"],s:[["tek",350]]},
+  {n:["Red Flag","Red Flag"],d:["Vodka, vişne suyu, Sprite, soda, lime suyu","Vodka, sour cherry juice, Sprite, sparkling water, lime juice"],s:[["tek",400]]},
+  {n:["Okyanus","Ocean"],d:["White rum, vodka, blue curaçao, ananas suyu","White rum, vodka, blue curaçao, pineapple juice"],s:[["tek",470]]},
+  {n:["Black Out","Black Out"],d:["Jägermeister, kola, lime, siyah üzüm suyu","Jägermeister, cola, lime, black grape juice"],s:[["tek",400]]},
+  {n:["Bombshell Blonde","Bombshell Blonde"],d:["White rum, Malibu, ananas suyu, lime suyu","White rum, Malibu, pineapple juice, lime juice"],s:[["tek",450]]},
+  {n:["Lucifer","Lucifer"],d:["Rom, tekila, cin, ananas suyu, portakal suyu, misket limonu","Rum, tequila, gin, pineapple juice, orange juice, lime"],s:[["tek",600]]}
  ]},
  {id:"alkolsuz-kokteyller",icon:"i-cup",name:["Alkolsüz Kokteyller","Non-Alcoholic Cocktails"],intro:["Alkolsüz ama doyurucu lezzetler.","Alcohol-free, yet rich in taste."],items:[
-  {n:["Alkolsüz Kokteyller","Non-Alcoholic Cocktails"],d:["",""],s:[["tek",200]]}
+  {n:["Alkolsüz Kokteyller","Non-Alcoholic Cocktails"],d:["Dilediğiniz ekşi, tatlı veya dengeli lezzette alkolsüz imza kokteylinizi seçebilirsiniz.","Choose your non-alcoholic signature cocktail with your preferred sour, sweet, or balanced flavor."],s:[["tek",200]]}
  ]},
  {id:"kampanyalar",icon:"i-beer",name:["Kampanyalar","Special Offers"],intro:["Fiyat avantajı sunan paketler.","Value-packed offers for the table."],items:[
   {n:["5'li Malt Kova","5 Malt Bucket"],d:["",""],s:[["tek",850]]},
@@ -343,8 +347,6 @@ const CATS = [
   {n:["Amsterdam + Tekila Shot","Amsterdam + Tequila Shot"],d:["",""],s:[["tek",500]]}
  ]},
  {id:"vodkalar",icon:"i-bottle",name:["Votkalar","Vodkas"],intro:["Klasik ve hafif içim seçenekleri.","Classic and smooth vodka choices."],items:[
-  {n:["İstanblue Duble","İstanblue Double"],d:["Meyve suyu ile servis edilir.","Served with fruit juice."],s:[["tek",350]]},
-  {n:["İstanblue Tek","İstanblue Single"],d:["Meyve suyu ile servis edilir.","Served with fruit juice."],s:[["tek",275]]},
   {n:["Smirnoff Duble","Smirnoff Double"],d:["Meyve suyu ile servis edilir.","Served with fruit juice."],s:[["tek",350]]},
   {n:["Smirnoff Tek","Smirnoff Single"],d:["Meyve suyu ile servis edilir.","Served with fruit juice."],s:[["tek",275]]},
   {n:["Gilbeys Duble","Gilbeys Double"],d:["Meyve suyu ile servis edilir.","Served with fruit juice."],s:[["tek",350]]},
@@ -359,7 +361,8 @@ const CATS = [
   {n:["Türk Kahvesi","Turkish Coffee"],d:["",""],s:[["tek",120]]},
   {n:["Filtre Kahve","Filter Coffee"],d:["",""],s:[["tek",175]]},
   {n:["Nescafe Sütlü (Şekerli-Şekersiz)","Nescafe with Milk (With/Without Sugar)"],d:["",""],s:[["tek",150]]},
-  {n:["Espresso","Espresso"],d:["",""],s:[["tek",200]]},
+  {n:["Espresso","Espresso"],d:["",""],s:[["tek",150]]},
+  {n:["Double Espresso","Double Espresso"],d:["",""],s:[["tek",200]]},
   {n:["Lungo","Lungo"],d:["",""],s:[["tek",200]]},
   {n:["Ristretto","Ristretto"],d:["",""],s:[["tek",200]]},
   {n:["Americano","Americano"],d:["",""],s:[["tek",200]]},
@@ -367,9 +370,7 @@ const CATS = [
   {n:["Latte Macchiato","Latte Macchiato"],d:["",""],s:[["tek",200]]},
   {n:["Cafe Latte","Cafe Latte"],d:["",""],s:[["tek",200]]},
   {n:["Sıcak Çikolata","Hot Chocolate"],d:["",""],s:[["tek",200]]},
-  {n:["Bitki Çayı Ihlamur","Herbal Tea Linden"],d:["",""],s:[["tek",100]]},
-  {n:["Bitki Çayı Kuşburnu","Herbal Tea Rosehip"],d:["",""],s:[["tek",100]]},
-  {n:["Bitki Çayı Elma","Herbal Tea Apple"],d:["",""],s:[["tek",100]]}
+  {n:["Bitki Çayları","Herbal Teas"],d:["",""],s:[["tek",100]]}
  ]},
  {id:"soguk-icecekler",icon:"i-glass",name:["Soğuk İçecekler","Cold Beverages"],intro:["Ferahlatıcı soğuk seçenekler.","Refreshing cold options."],items:[
   {n:["Su","Water"],d:["",""],s:[["tek",40]]},
@@ -379,6 +380,8 @@ const CATS = [
   {n:["Sprite","Sprite"],d:["",""],s:[["tek",125]]},
   {n:["Fuse tea - Lipton","Iced Tea (Fuse Tea - Lipton)"],d:["",""],s:[["tek",125]]},
   {n:["Redbull","Redbull"],d:["",""],s:[["tek",160]]},
+  {n:["Ice Latte","Iced Latte"],d:["",""],s:[["tek",200]]},
+  {n:["Ice Americano","Iced Americano"],d:["",""],s:[["tek",200]]},
   {n:["Sade Soda","Plain Sparkling Water"],d:["",""],s:[["tek",75]]},
   {n:["Meyveli Soda","Fruity Sparkling Water"],d:["",""],s:[["tek",75]]}
  ]},
@@ -407,7 +410,11 @@ const CATS = [
  {id:"shotlar",icon:"i-bottle",name:["Shotlar","Shots"],intro:["Ani ve keyifli kısa içimler.","Quick and enjoyable short pours."],items:[
   {n:["Tekila Shot","Tequila Shot"],d:["",""],s:[["tek",180]]},
   {n:["Baileys Shot","Baileys Shot"],d:["",""],s:[["tek",160]]},
-  {n:["Jager Shot","Jager Shot"],d:["",""],s:[["tek",180]]},
+  {n:["Baileys Chocolate","Baileys Chocolate"],d:["",""],s:[["tek",250]]},
+  {n:["Jäger Shot","Jäger Shot"],d:["",""],s:[["tek",200]]},
+  {n:["Red Flag Shot","Red Flag Shot"],d:["",""],s:[["tek",150]]},
+  {n:["Red Flag 4’lü","Red Flag 4-pack"],d:["",""],s:[["tek",500]]},
+  {n:["Red Flag 8’li","Red Flag 8-pack"],d:["",""],s:[["tek",1000]]},
   {n:["Gin Shot","Gin Shot"],d:["",""],s:[["tek",170]]},
   {n:["Vodka Shot","Vodka Shot"],d:["",""],s:[["tek",170]]},
   {n:["Viski Shot","Whiskey Shot"],d:["",""],s:[["tek",250]]},
